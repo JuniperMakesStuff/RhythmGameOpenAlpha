@@ -159,7 +159,7 @@ window.onload = function() {
     console.log(gamepadsa[0].connected)
     console.log(gamepadsa[0].axes)
       
-      if (gamepadsa[0].connected == false){
+      if (gamepadsa[0].connected == true){
         gamepadsa[0].vibrationActuator.playEffect("dual-rumble", {
     startDelay: 0,
     duration: 100,
