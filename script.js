@@ -34,7 +34,7 @@ var newImgData = ctx.getImageData(tX, tY, tWIDTH, tHEIGHT);
 
 
 
-var quality = 0.5;
+var quality = 1;
 
 
 
@@ -153,7 +153,7 @@ window.onload = function() {
       var gamepadsa = navigator.getGamepads()
     
       
-      if(gamepadsa.length>0){
+      if(true){
         if (gamepadsa[0].connected == true){
         gamepadsa[0].vibrationActuator.playEffect("dual-rumble", {
     startDelay: 0,
