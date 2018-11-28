@@ -151,10 +151,8 @@ window.onload = function() {
 
     function renderFrame() {
       
-      /*var gamepadsa = navigator.getGamepads()
-    console.log(gamepadsa[0].connected)
-    console.log(gamepadsa[0].axes)
-      
+      var gamepadsa = navigator.getGamepads();
+    
       if (gamepadsa[0].connected == true){
         gamepadsa[0].vibrationActuator.playEffect("dual-rumble", {
     startDelay: 0,
@@ -174,7 +172,7 @@ window.onload = function() {
   mmy = mmy/(dist/50);
   }
   }
-      }*/
+      }
       
       
       
