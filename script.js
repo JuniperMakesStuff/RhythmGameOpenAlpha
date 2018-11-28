@@ -34,7 +34,7 @@ var newImgData = ctx.getImageData(tX, tY, tWIDTH, tHEIGHT);
 
 
 
-var quality = 0.5;
+var quality = 1;
 
 
 
