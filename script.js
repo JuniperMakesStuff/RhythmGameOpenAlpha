@@ -153,7 +153,7 @@ window.onload = function() {
       var gamepadsa = navigator.getGamepads()
     
       
-      if(isNaN(gamepadsa)==false){
+      if(gamepadsa.length>0){
         if (gamepadsa[0].connected == true){
         gamepadsa[0].vibrationActuator.playEffect("dual-rumble", {
     startDelay: 0,
