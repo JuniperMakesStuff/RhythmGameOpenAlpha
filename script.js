@@ -154,6 +154,7 @@ window.onload = function() {
       var gamepadsa = navigator.getGamepads();
     
       if (gamepadsa[0].connected == true){
+        ctx.strokeText("CONNECTED",10,HEIGHT/2);
         gamepadsa[0].vibrationActuator.playEffect("dual-rumble", {
     startDelay: 0,
     duration: 100,
@@ -172,6 +173,11 @@ window.onload = function() {
   mmy = mmy/(dist/50);
   }
   }
+      }else{
+        
+        
+        ctx.strokeText("NOT CONNECTED",10,HEIGHT/2);
+        
       }
       
       
