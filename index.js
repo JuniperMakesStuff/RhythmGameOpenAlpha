@@ -152,11 +152,11 @@ window.onload = function() {
     function renderFrame() {
       
       
-      var gamepadsa = navigator.getGamepads()
-      /*ctx.font = "12px Verdana";
-      ctx.strokeText(gamepadsa.length,10,10);*/
-      /*ctx.strokeText("C0 connected: "+gamepadsa[0].connected,10,10);
-      ctx.strokeText("C1 connected: "+gamepadsa[1].connected,10,24);*/
+      /*var gamepadsa = navigator.getGamepads()
+      //ctx.font = "12px Verdana";
+      //ctx.strokeText(gamepadsa.length,10,10);
+      //ctx.strokeText("C0 connected: "+gamepadsa[0].connected,10,10);
+      //ctx.strokeText("C1 connected: "+gamepadsa[1].connected,10,24);
     console.log(gamepadsa[0].connected)
     console.log(gamepadsa[0].axes)
       
@@ -179,7 +179,7 @@ window.onload = function() {
   mmy = mmy/(dist/50);
   }
   }
-      }
+      }*/
       
       
       
