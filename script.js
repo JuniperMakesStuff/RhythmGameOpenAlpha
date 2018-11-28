@@ -34,7 +34,7 @@ var newImgData = ctx.getImageData(tX, tY, tWIDTH, tHEIGHT);
 
 
 
-var quality = 1;
+var quality = 0.5;
 
 
 
@@ -114,7 +114,6 @@ window.onload = function() {
     
     audio.load();
     audio.play();
-    audio.playbackRate = 15;
     audio.currentTime = 0;
     var context = new AudioContext();
     var src = context.createMediaElementSource(audio);
@@ -151,10 +150,11 @@ window.onload = function() {
 
     function renderFrame() {
       
-      var gamepadsa = navigator.getGamepads();
+      var gamepadsa = navigator.getGamepads()
     
-      if (gamepadsa[0].connected == true){
-        ctx.strokeText("CONNECTED",10,HEIGHT/2);
+      
+      if(isNaN(gamepadsa)==false){
+        if (gamepadsa[0].connected == true){
         gamepadsa[0].vibrationActuator.playEffect("dual-rumble", {
     startDelay: 0,
     duration: 100,
@@ -173,16 +173,11 @@ window.onload = function() {
   mmy = mmy/(dist/50);
   }
   }
-      }else{
-        
-        
-        ctx.strokeText("NOT CONNECTED",10,HEIGHT/2);
-        
-      }
+      }}
       
       
       
-      var quality2 = quality+(1-quality)/3;
+      var quality2 = quality+(1-quality)/3
       totalsize2+=(1.5*(totalsize-28000)-totalsize2)/10;
       canvas.width = window.innerWidth;
     canvas.height = window.innerWidth;
@@ -574,3 +569,4 @@ window.onload = function() {
     renderFrame();
   };
 };
+
