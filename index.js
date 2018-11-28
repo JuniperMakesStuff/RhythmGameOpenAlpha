@@ -114,6 +114,7 @@ window.onload = function() {
     
     audio.load();
     audio.play();
+    audio.playbackRate = 15;
     audio.currentTime = 0;
     var context = new AudioContext();
     var src = context.createMediaElementSource(audio);
@@ -177,7 +178,7 @@ window.onload = function() {
       
       
       
-      var quality2 = quality+(1-quality)/3
+      var quality2 = quality+(1-quality)/3;
       totalsize2+=(1.5*(totalsize-28000)-totalsize2)/10;
       canvas.width = window.innerWidth;
     canvas.height = window.innerWidth;
