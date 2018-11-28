@@ -150,7 +150,7 @@ window.onload = function() {
 
     function renderFrame() {
       
-      var gamepadsa = navigator.getGamepads()
+      /*var gamepadsa = navigator.getGamepads()
     console.log(gamepadsa[0].connected)
     console.log(gamepadsa[0].axes)
       
@@ -173,7 +173,7 @@ window.onload = function() {
   mmy = mmy/(dist/50);
   }
   }
-      }
+      }*/
       
       
       
